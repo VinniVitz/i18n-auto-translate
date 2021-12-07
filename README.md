@@ -16,4 +16,7 @@ API_KEY=your_api_key
 FILE_PATH=path.to.source.file
 OUT_DIR=path.to.target.dir // optional
 ```
+
+Run `npm start` or `yarn start`
+
 For all available source and target languages see https://www.deepl.com/docs-api/translating-text/request/.
