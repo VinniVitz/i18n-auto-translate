@@ -1,0 +1,27 @@
+{
+  "name": "i18n-auto-translate",
+  "version": "1.0.0",
+  "description": "Translate i18n JSON files with the Free DeepL API",
+  "main": "app.ts",
+  "scripts": {
+    "start": "export $(grep -v '^#' .env | xargs) && ts-node src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinniVitz/i18n-auto-translate.git"
+  },
+  "author": "Vinzenz Fuhrmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VinniVitz/i18n-auto-translate/issues"
+  },
+  "homepage": "https://vinnipedia.org",
+  "dependencies": {
+    "typescript": "4.5.2"
+  },
+  "devDependencies": {
+    "@types/axios": "0.14.0",
+    "@types/node": "16.11.12",
+    "ts-node": "10.4.0"
+  }
+}
