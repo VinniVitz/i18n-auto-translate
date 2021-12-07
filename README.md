@@ -3,6 +3,7 @@ Translate i18n JSON files with the Free DeepL API
 
 ## Setup project
 Create a free account on https://www.deepl.com/pro-api for your API key.
+
 Run `npm install` or `yarn install`
 
 ## Run project
