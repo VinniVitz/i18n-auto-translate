@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "start": "export $(grep -v '^#' .env | xargs) && ts-node src/app.ts",
-	"build": "mkdir -p ./dist && webpack && minify dist/bundle.js > dist/i18n-auto-translate.js && rm dist/bundle.js"
+    "build": "mkdir -p ./dist && webpack && minify dist/bundle.js > dist/i18n-auto-translate.js && rm dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
     "typescript": "4.5.2"
   },
   "devDependencies": {
-    "@types/axios": "0.14.0",
     "@types/node": "16.11.12",
     "minify": "8.0.3",
     "ts-loader": "9.2.6",
