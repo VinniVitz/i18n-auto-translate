@@ -23,7 +23,12 @@ async function init(): Promise<void> {
     );
     writeFileSync(
       `${out_dir ? out_dir + "/" : ""}${target_lang
-        .substring(0, target_lang.indexOf("-"))
+        .substring(
+          0,
+          target_lang.indexOf("-") === -1
+            ? target_lang.length
+            : target_lang.indexOf("-")
+        )
         .toLowerCase()}.json`,
       JSON.stringify(result),
       { flag: "w" }
