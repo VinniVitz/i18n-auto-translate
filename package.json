@@ -4,7 +4,8 @@
   "description": "Translate i18n JSON files with the Free DeepL API",
   "main": "app.ts",
   "scripts": {
-    "start": "export $(grep -v '^#' .env | xargs) && ts-node src/app.ts"
+    "start": "export $(grep -v '^#' .env | xargs) && ts-node src/app.ts",
+	"build": "mkdir -p ./dist && webpack && minify dist/bundle.js > dist/i18n-auto-translate.js && rm dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,10 @@
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/node": "16.11.12",
-    "ts-node": "10.4.0"
+    "minify": "8.0.3",
+    "ts-loader": "9.2.6",
+    "ts-node": "10.4.0",
+    "webpack": "5.65.0",
+    "webpack-cli": "4.9.1"
   }
 }
